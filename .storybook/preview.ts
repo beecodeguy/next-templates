@@ -1,5 +1,5 @@
 // @ts-check
-import '../pages/globals.css';
+import '../src/app/globals.css';
 
 const BREAKPOINTS_INT = {
   xs: 375,
