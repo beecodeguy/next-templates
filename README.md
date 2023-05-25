@@ -1,3 +1,24 @@
+## Project CI/CD Info:
+
+We have setup the commit check for the project, so it is essential to follow these rules when creating the new branch.
+
+We will be using following keys in front of the branch name along side with the Ticket number from the JIRA Board.
+
+For Example: If you are working on the Ticket issued to you and the Ticket Number on the board is `SN-1` your new branch name must be `feat/SN-1`
+
+Note: If you do not follow this rule, you will not be able to commit your branch or will be able to push the branch.
+
+Keys to be used for the branch are:
+* feat -> for any new feature to be developed (recommended for most of the users)
+* fix -> for minor fixes on the project
+* refactor -> for refactoring of the codebase for optimization or version updates
+* style -> for css updates
+* test -> for checking the test
+* ci -> for changes in ci/cd of the project
+* docs -> for updating the docs on the project
+* build -> for pushing the local build
+* revert -> for any revert to the codebase had to be done
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
