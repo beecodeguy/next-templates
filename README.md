@@ -33,6 +33,18 @@ Keys to be used for the branch are:
 - build -> for pushing the local build
 - revert -> for any revert to the codebase had to be done
 
+# Note: (PR Creation)
+
+- It is mandatory to create the PR after the completion of the task and add it to the `In review` Column on the `JIRA BOARD`
+- Rule for creation of the PR: If your branch name is `feat/SN-1`, PR title must be started with `SN-1` followed by your task summary.
+  For Example:
+
+```PR Title
+SN-1 | Task Demo shown
+```
+
+- After creation of the PR(Pull Request) we assign the task to the reviewer on the Jira Board
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
