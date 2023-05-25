@@ -1,3 +1,11 @@
+## Getting Started
+ # Introduction
+
+ visit us at:
+ ** Live Site: [sharebigya.com](https://www.sharebigya.com)
+ ** Storybooks: [storybook.sharebigya.com]
+ ** test site: [test.sharebigya.com]
+
 ## Project CI/CD Info:
 
 We have setup the commit check for the project, so it is essential to follow these rules when creating the new branch.
@@ -23,8 +31,6 @@ Keys to be used for the branch are:
 * revert -> for any revert to the codebase had to be done
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
 
 First, run the development server:
 
