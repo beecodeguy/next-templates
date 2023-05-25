@@ -6,6 +6,9 @@ We will be using following keys in front of the branch name along side with the 
 
 For Example: If you are working on the Ticket issued to you and the Ticket Number on the board is `SN-1` your new branch name must be `feat/SN-1`
 
+Also this must be followed when writing commit message as example below:
+`git commit -m 'feat: commit message here..`
+
 Note: If you do not follow this rule, you will not be able to commit your branch or will be able to push the branch.
 
 Keys to be used for the branch are:
