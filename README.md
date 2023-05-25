@@ -1,10 +1,12 @@
 ## Getting Started
- # Introduction
 
- visit us at:
- ** Live Site: [sharebigya.com](https://www.sharebigya.com)
- ** Storybooks: [storybook.sharebigya.com]
- ** test site: [test.sharebigya.com]
+# Introduction
+
+visit us at:
+
+- Live Site: [sharebigya.com](https://www.sharebigya.com)
+- Storybooks: [storybook.sharebigya.com]
+- test site: [test.sharebigya.com]
 
 ## Project CI/CD Info:
 
@@ -20,15 +22,16 @@ Also this must be followed when writing commit message as example below:
 Note: If you do not follow this rule, you will not be able to commit your branch or will be able to push the branch.
 
 Keys to be used for the branch are:
-* feat -> for any new feature to be developed (recommended for most of the users)
-* fix -> for minor fixes on the project
-* refactor -> for refactoring of the codebase for optimization or version updates
-* style -> for css updates
-* test -> for checking the test
-* ci -> for changes in ci/cd of the project
-* docs -> for updating the docs on the project
-* build -> for pushing the local build
-* revert -> for any revert to the codebase had to be done
+
+- feat -> for any new feature to be developed (recommended for most of the users)
+- fix -> for minor fixes on the project
+- refactor -> for refactoring of the codebase for optimization or version updates
+- style -> for css updates
+- test -> for checking the test
+- ci -> for changes in ci/cd of the project
+- docs -> for updating the docs on the project
+- build -> for pushing the local build
+- revert -> for any revert to the codebase had to be done
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
