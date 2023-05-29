@@ -45,6 +45,8 @@ SN-1 | Task Demo shown
 
 - After creation of the PR(Pull Request) we assign the task to the reviewer on the Jira Board
 
+## Default Notes Below (not Recommended)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
