@@ -7,9 +7,17 @@ export interface ICatCard {
   body: string;
   author: string;
   time: string;
+  imgSrc?: string;
 }
 
-const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
+const CatCard: React.FC<ICatCard> = ({
+  tag,
+  title,
+  body,
+  author,
+  time,
+  imgSrc = 'https://i.pravatar.cc/40?img=3',
+}) => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -30,7 +38,7 @@ const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
         <div className={styles.card__footer}>
           <div className={styles.user}>
             <Image
-              src="https://i.pravatar.cc/40?img=3"
+              src={imgSrc}
               alt="user__image"
               className={styles.user__image}
               width="40"

@@ -8,16 +8,17 @@
     "npm": "please user yarn!"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 3008",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "storybook": "storybook dev -p 6008",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006 -s ./public",
+    "build-storybook": "storybook build -s public"
   },
   "dependencies": {
+    "@storybook/codemod": "6.4.19",
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
@@ -26,24 +27,25 @@
     "next": "^13.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
-    "@storybook/addon-essentials": "^7.0.2",
-    "@storybook/addon-interactions": "^7.0.2",
-    "@storybook/addon-links": "^7.0.2",
-    "@storybook/blocks": "^7.0.2",
-    "@storybook/nextjs": "^7.0.2",
-    "@storybook/react": "^7.0.2",
+    "@storybook/addon-essentials": "^7.0.18",
+    "@storybook/addon-interactions": "^7.0.18",
+    "@storybook/addon-links": "^7.0.18",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/nextjs": "^7.0.18",
+    "@storybook/react": "^7.0.18",
     "@storybook/testing-library": "^0.0.14-next.2",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
     "eslint-plugin-storybook": "^0.6.11",
     "husky": "^8.0.3",
     "prettier": "^2.8.7",
-    "storybook": "^7.0.2"
+    "storybook": "^7.0.18"
   },
   "resolutions": {
     "webpack": "^5"

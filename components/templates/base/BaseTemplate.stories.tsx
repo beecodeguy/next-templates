@@ -17,6 +17,6 @@ type Story = StoryObj<typeof BaseTemplateComponent>;
 
 export const Base: Story = {
   args: {
-    stringProps: 'Hello World!!',
+    stringProps: 'This is the Base Template!!',
   },
 };

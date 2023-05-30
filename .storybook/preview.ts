@@ -1,10 +1,10 @@
-// @ts-check
-import '../src/app/globals.css';
+import type { Preview } from '@storybook/react';
+
 
 const BREAKPOINTS_INT = {
-  xs: 375,
-  sm: 600,
-  md: 900,
+  ['xs [mobile]']: 375,
+  ['sm [Tablet]']: 600,
+  ['md [Tablet Landscape]']: 900,
   lg: 1200,
   xl: 1536,
 };
@@ -25,25 +25,33 @@ const customViewports = Object.fromEntries(
   })
 );
 
-// Allow Storybook to handle Next's <Image> component
 // const OriginalNextImage = NextImage.default;
 
-// Object.defineProperty(NextImage, 'default', {
+// Object.defineProperty(NextImage, "default", {
 //   configurable: true,
-//   value: (props) => <OriginalNextImage { ...props } unoptomized />
+//   value: (props: any) => (
+//     <OriginalNextImage
+//       {...props}
+//       unoptimized
+//     />
+//   ),
 // });
 
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+const preview: Preview = {
+  parameters: {
+    actions: { argTypesRegex: '^on[A-Z].*' },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
     },
-  },
-  viewport: { viewports: customViewports },
+    nextjs: {
+      appDirectory: true
+    },
+    viewport: { viewports: customViewports },
   layout: 'fullscreen',
-  // nextRouter: {
-  //   Provider: RouterContext.Provider,
-  // },
+  },
 };
+
+export default preview;
