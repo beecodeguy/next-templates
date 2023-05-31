@@ -17,7 +17,7 @@
   "plugins": ["import"],
   "rules": {
     "no-unused-vars": [
-      1,
+      2,
       {
         "args": "after-used",
         "argsIgnorePattern": "^_"
@@ -31,6 +31,19 @@
       {
         "patterns": [".*"]
       }
+    ],
+    "@typescript-eslint/camelcase": 0,
+    "max-len": [
+      "error",
+      120,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
     ]
   },
   "overrides": [
@@ -40,5 +53,23 @@
         "storybook/hierarchy-separator": "error"
       }
     }
-  ]
+  ],
+  "ignorePatterns": [
+    ".husky",
+    ".eslintrc.js",
+    ".prettierrc.js",
+    "/.git",
+    "/.vscode",
+    "/libraries",
+    "/**/__snapshots__",
+    "/**/node_modules"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
 }
