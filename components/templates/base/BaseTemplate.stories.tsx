@@ -1,5 +1,5 @@
+import BaseTemplateComponent from '@components/templates/base/BaseTemplate';
 import type { Meta, StoryObj } from '@storybook/react';
-import BaseTemplateComponent from './BaseTemplate';
 
 const meta: Meta<typeof BaseTemplateComponent> = {
   title: 'Template/Base',

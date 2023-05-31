@@ -3,11 +3,18 @@
     "next/core-web-vitals",
     "next",
     "eslint:recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "./config.json"
   ],
   "globals": {
     "React": "readonly"
   },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "plugins": ["import"],
   "rules": {
     "no-unused-vars": [
       1,
@@ -16,7 +23,15 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "react/no-unescaped-entities": 0
+    "react/no-unescaped-entities": 0,
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
+    "import/no-unresolved": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [".*"]
+      }
+    ]
   },
   "overrides": [
     {

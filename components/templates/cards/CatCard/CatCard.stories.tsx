@@ -1,6 +1,6 @@
+import CatCard from '@components/templates/cards/CatCard/CatCard';
+import { mockCatCardProps } from '@components/templates/cards/CatCard/catCard.mocks';
 import { Meta, StoryObj } from '@storybook/react';
-import CatCard from './CatCard';
-import { mockCatCardProps } from './catCard.mocks';
 
 const meta: Meta<typeof CatCard> = {
   title: 'Apps/Components/Cards/CatCard',

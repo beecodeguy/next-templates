@@ -1,5 +1,5 @@
+import styles from 'components/templates/cards/catCard.module.css';
 import Image from 'next/image';
-import styles from './catCard.module.css';
 
 export interface ICatCard {
   tag: string;

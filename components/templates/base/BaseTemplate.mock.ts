@@ -1,4 +1,4 @@
-import { IBaseTemplateProps } from "./BaseTemplate";
+import { IBaseTemplateProps } from "components/templates/base/BaseTemplate";
 
 const baseExampleString: IBaseTemplateProps = {
   stringProps: 'Hello World'

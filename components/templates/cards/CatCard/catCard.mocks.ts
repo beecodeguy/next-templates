@@ -1,4 +1,4 @@
-import { ICatCard } from './CatCard';
+import { ICatCard } from '@components/templates/cards/CatCard/CatCard';
 
 const base: ICatCard = {
   tag: 'Felines',
