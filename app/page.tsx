@@ -1,22 +1,20 @@
-import styles from 'app/page.module.css';
-import { Inter } from 'next/font/google';
-import Image from 'next/image';
+import styles from "app/page.module.css";
+import { Inter } from "next/font/google";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const checkMe = 'lorem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem loremorem loremorem loremorem loremorem loremorem loremorem loremorem loremorem loremorem loremorem lorem'
+  const checkMe =
+    "lorem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem lorem orem loremorem loremorem loremorem loremorem loremorem loremorem loremorem loremorem loremorem loremorem lorem";
 
-  console.log(checkMe)
-
+  console.log(checkMe);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
-          <code className={styles.code}>
-            src/app/page.tsx
-            </code>
+          <code className={styles.code}>src/app/page.tsx</code>
         </p>
         <div>
           <a
@@ -24,28 +22,14 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            By{" "}
+            <Image src="/vercel.svg" alt="Vercel Logo" className={styles.vercelLogo} width={100} height={24} priority />
           </a>
         </div>
       </div>
 
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <Image className={styles.logo} src="/next.svg" alt="Next.js Logo" width={180} height={37} priority />
       </div>
 
       <div className={styles.grid}>
@@ -58,9 +42,7 @@ export default function Home() {
           <h2 className={inter.className}>
             Docs <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
+          <p className={inter.className}>Find in-depth information about Next.js features and API.</p>
         </a>
 
         <a
@@ -72,9 +54,7 @@ export default function Home() {
           <h2 className={inter.className}>
             Learn <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
+          <p className={inter.className}>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
         </a>
 
         <a
@@ -98,9 +78,7 @@ export default function Home() {
           <h2 className={inter.className}>
             Deploy <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+          <p className={inter.className}>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
         </a>
       </div>
     </main>

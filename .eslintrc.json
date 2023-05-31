@@ -4,6 +4,9 @@
     "next",
     "eslint:recommended",
     "plugin:storybook/recommended",
+    "prettier",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
     "./config.json"
   ],
   "globals": {
@@ -14,8 +17,19 @@
     "sourceType": "module",
     "allowImportExportEverywhere": true
   },
-  "plugins": ["import"],
+  "plugins": ["import", "prettier", "@typescript-eslint"],
   "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "prettier/prettier": ["error"],
     "no-unused-vars": [
       2,
       {
@@ -44,7 +58,11 @@
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true
       }
-    ]
+    ],
+    "import/prefer-default-export": ["off"],
+    "react/prop-types": 0,
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error"
   },
   "overrides": [
     {
@@ -69,6 +87,18 @@
       "node": {
         "paths": ["./"],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {
+        "directory": "./tsconfig.json"
+      }
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["./"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {
+        "directory": "./tsconfig.json"
       }
     }
   }
