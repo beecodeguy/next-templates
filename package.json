@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=16.0.0",
+    "node": ">=16.14.0",
     "yarn": ">=1.22.0",
     "npm": "please user yarn!"
   },
@@ -15,10 +15,12 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006 -s ./public",
-    "build-storybook": "storybook build -s public"
+    "build-storybook": "storybook build -s public",
+    "deploy-storybook": "storybook-to-aws-s3 --bucket-path=story.sharebigya.com/ --aws-profile=NONE"
   },
   "dependencies": {
     "@storybook/codemod": "6.4.19",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
