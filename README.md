@@ -5,8 +5,12 @@
 visit us at:
 
 - Live Site: [sharebigya.com](https://www.sharebigya.com)
-- Storybooks: [storybook.sharebigya.com]
+- Storybooks: [storybook.sharebigya.com](https://www.story.sharebigya.com)
 - test site: [test.sharebigya.com]
+
+## NODE VERSION USED ==> (v16.14.0)
+
+If you have difficulty in instaling the packages then it is recommended for you to use the Version mentioned above. (v16.14.0)
 
 ## Project CI/CD Info:
 
@@ -43,7 +47,17 @@ Keys to be used for the branch are:
 SN-1 | Task Demo shown
 ```
 
-- After creation of the PR(Pull Request) we assign the task to the reviewer on the Jira Board
+- After creation of the PR(Pull Request) we assign the task to the reviewer on the Jira Board and also move the task to respective column
+
+# Storybook: (Intro)
+
+We have storybook implemented on the project and for each component we can find it within the storybook
+
+- We can start the storybook by running the following command as:
+
+```
+yarn storybook
+```
 
 ## Default Notes Below (not Recommended)
 
