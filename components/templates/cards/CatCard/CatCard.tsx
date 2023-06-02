@@ -1,4 +1,4 @@
-import styles from "components/templates/cards/catCard.module.css";
+import styles from "components/templates/cards/CatCard/catCard.module.css";
 import Image from "next/image";
 
 export interface ICatCard {
