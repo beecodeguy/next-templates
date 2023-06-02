@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import styles from './basetemplate.module.css';
+import styles from "components/templates/base/basetemplate.module.css";
+import { FC } from "react";
 
 export interface IBaseTemplateProps {
   stringProps: string;

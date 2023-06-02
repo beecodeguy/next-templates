@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=16.0.0",
+    "node": ">=16.14.0",
     "yarn": ">=1.22.0",
     "npm": "please user yarn!"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 3008",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -17,7 +17,6 @@
     "storybook": "storybook dev -p 6006 -s ./public",
     "build-storybook": "storybook build -s public",
     "deploy-storybook": "storybook-to-aws-s3 --bucket-path=story.sharebigya.com/ --aws-profile=NONE"
-
   },
   "dependencies": {
     "@storybook/codemod": "6.4.19",
@@ -25,7 +24,7 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
-    "eslint": "8.38.0",
+    "eslint": "^8.2.0",
     "eslint-config-next": "^13.4.3",
     "next": "^13.4.3",
     "react": "^18.2.0",
@@ -43,11 +42,20 @@
     "@storybook/nextjs": "^7.0.18",
     "@storybook/react": "^7.0.18",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.6.11",
     "husky": "^8.0.3",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "storybook": "^7.0.18"
   },
   "resolutions": {
