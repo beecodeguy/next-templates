@@ -62,7 +62,8 @@
     "import/prefer-default-export": ["off"],
     "react/prop-types": 0,
     "no-dupe-args": "error",
-    "no-dupe-keys": "error"
+    "no-dupe-keys": "error",
+    "no-unreachable": "error"
   },
   "overrides": [
     {
