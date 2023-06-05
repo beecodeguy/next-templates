@@ -5,7 +5,7 @@
 visit us at:
 
 - Live Site: [sharebigya.com](https://www.sharebigya.com)
-- Storybooks: [storybook.sharebigya.com](https://www.story.sharebigya.com)
+- Storybooks: [storybook.sharebigya.com](http://www.story.sharebigya.com)
 - test site: [test.sharebigya.com]
 
 ## NODE VERSION USED ==> (v16.14.0)

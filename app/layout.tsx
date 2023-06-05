@@ -1,4 +1,5 @@
 import "app/globals.css";
+import ThemeProviderRoot from "app/ThemeProviderRoot";
 
 export const metadata = {
   title: "Sharebigya",
@@ -8,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeProviderRoot>{children}</ThemeProviderRoot>
+      </body>
     </html>
   );
 }
