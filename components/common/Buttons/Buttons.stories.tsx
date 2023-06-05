@@ -18,5 +18,6 @@ type Story = StoryObj<typeof ButtonsComponent>;
 export const BaseButton: Story = {
   args: {
     btnText: "Start",
+    backgroundColor: "coral",
   },
 };
