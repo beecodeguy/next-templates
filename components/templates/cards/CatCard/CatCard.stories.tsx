@@ -3,7 +3,7 @@ import CatCard from "components/templates/cards/CatCard/CatCard";
 import { mockCatCardProps } from "components/templates/cards/CatCard/catCard.mocks";
 
 const meta: Meta<typeof CatCard> = {
-  title: "Apps/Components/Cards/CatCard",
+  title: "Template/Components/Cards/CatCard",
   component: CatCard,
   argTypes: {},
   tags: ["autodocs"],
