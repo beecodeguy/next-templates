@@ -1,10 +1,10 @@
-import type { Preview } from '@storybook/react';
-
+import type { Preview } from "@storybook/react";
+import "../app/globals.css";
 
 const BREAKPOINTS_INT = {
-  ['xs [mobile]']: 375,
-  ['sm [Tablet]']: 600,
-  ['md [Tablet Landscape]']: 900,
+  ["xs [mobile]"]: 375,
+  ["sm [Tablet]"]: 600,
+  ["md [Tablet Landscape]"]: 900,
   lg: 1200,
   xl: 1536,
 };
@@ -22,7 +22,7 @@ const customViewports = Object.fromEntries(
         },
       },
     ];
-  })
+  }),
 );
 
 // const OriginalNextImage = NextImage.default;
@@ -39,7 +39,7 @@ const customViewports = Object.fromEntries(
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
+    actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -47,10 +47,10 @@ const preview: Preview = {
       },
     },
     nextjs: {
-      appDirectory: true
+      appDirectory: true,
     },
     viewport: { viewports: customViewports },
-  layout: 'fullscreen',
+    layout: "fullscreen",
   },
 };
 
