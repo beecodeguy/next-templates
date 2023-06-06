@@ -10,6 +10,7 @@ const meta: Meta<typeof ButtonsComponent> = {
     // More on how to position stories at: https://storybook.js.org/docs/7.0/react/configure/story-layout
     layout: "fullscreen",
   },
+  decorators: [story => <div className="mx-10 my-10">{story()}</div>],
 };
 
 export default meta;
@@ -17,7 +18,7 @@ type Story = StoryObj<typeof ButtonsComponent>;
 
 export const BaseButton: Story = {
   args: {
-    btnText: "Start",
-    backgroundColor: "coral",
+    btnText: "Enter your Text",
+    handleBtnClick: () => console.log("btn clicked"),
   },
 };

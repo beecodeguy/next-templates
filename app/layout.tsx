@@ -1,5 +1,6 @@
-import "app/globals.css";
 import ThemeProviderRoot from "app/ThemeProviderRoot";
+import "app/globals.css";
+import "assets/styles/main.scss";
 
 export const metadata = {
   title: "Sharebigya",
