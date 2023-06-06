@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./",
+    "baseUrl": "src",
     "plugins": [
       {
         "name": "typescript-plugin-css-modules"
@@ -25,11 +25,12 @@
       }
     ],
     "paths": {
-      "components": ["./components"],
-      "app": ["./app"],
-      "lib": ["./lib"],
-      "stories": ["./stories"],
-      "assets": ["./assets"]
+      "components": ["src/components"],
+      "app": ["src/app"],
+      "lib": ["src/lib"],
+      "stories": ["src/stories"],
+      "assets": ["src/assets"],
+      "utils": ["src/utils"]
     }
   },
   "include": ["./**/*", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
