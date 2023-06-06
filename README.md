@@ -5,7 +5,7 @@
 visit us at:
 
 - Live Site: [sharebigya.com](https://www.sharebigya.com)
-- Storybooks: [storybook.sharebigya.com](http://www.story.sharebigya.com)
+- Storybooks: [storybook.sharebigya.com](http://story.sharebigya.com)
 - test site: [test.sharebigya.com]
 
 ## NODE VERSION USED ==> (v16.14.0)
@@ -27,15 +27,19 @@ Note: If you do not follow this rule, you will not be able to commit your branch
 
 Keys to be used for the branch are:
 
-- feat -> for any new feature to be developed (recommended for most of the users)
-- fix -> for minor fixes on the project
-- refactor -> for refactoring of the codebase for optimization or version updates
-- style -> for css updates
+- feature -> for any new feature to be developed (recommended for most of the users)
+- hotfix -> for minor fixes on the project
+- bugfix -> for fixing bugs
 - test -> for checking the test
 - ci -> for changes in ci/cd of the project
 - docs -> for updating the docs on the project
 - build -> for pushing the local build
 - revert -> for any revert to the codebase had to be done
+
+# Note: (Branch Creation)
+
+- Always create the new branch from `develop` as the base branch
+- Branch created must have above mentioned keys as prefix followed by the task the branch is being forked for: `feature/SN-101`
 
 # Note: (PR Creation)
 
