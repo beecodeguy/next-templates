@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react";
-import "../app/globals.css";
+import "app/globals.css";
+import "assets/styles/main.scss";
 
 const BREAKPOINTS_INT = {
   ["xs [mobile]"]: 375,
