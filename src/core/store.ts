@@ -1,6 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
+import userSearchReducer from "core/slice/reduxSearchTemplateSlice";
+
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    usersRoot: userSearchReducer,
+  },
+  devTools: true,
 });
 
 export type RootState = ReturnType<typeof store.getState>;
