@@ -10,7 +10,7 @@ visit us at:
 
 ## NODE VERSION USED ==> (v16.14.0)
 
-If you have difficulty in instaling the packages then it is recommended for you to use the Version mentioned above. (v16.14.0)
+If you have difficulty in installing the packages then it is recommended for you to use the Version mentioned above. (v16.14.0)
 
 ## Project CI/CD Info:
 
