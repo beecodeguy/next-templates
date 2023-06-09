@@ -1,8 +1,9 @@
 "use server";
 import SearchInput from "components/templates/SearchInput";
-import PreLoader from "core/hocs/PreLoader";
 import { setUsers } from "core/slice/reduxSearchTemplateSlice";
 import { store } from "core/store";
+
+// NOTE: PreLoader is not to be set and unused for now. As preloader was created to use store from SSR to CSR
 
 const ReduxUser = async () => {
   "use server";
@@ -12,7 +13,6 @@ const ReduxUser = async () => {
 
   return (
     <div className="flex-col items-center justify-center w-100">
-      <PreLoader actionHandler={setUsers} actionPayload={userList} />
       <h3>Taken to /puressr</h3>
       <SearchInput />
     </div>
