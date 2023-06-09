@@ -12,6 +12,8 @@ visit us at:
 
 If you have difficulty in installing the packages then it is recommended for you to use the Version mentioned above. (v16.14.0)
 
+## Only 'yarn' supported
+
 ## Project CI/CD Info:
 
 We have setup the commit check for the project, so it is essential to follow these rules when creating the new branch.

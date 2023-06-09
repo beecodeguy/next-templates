@@ -14,7 +14,7 @@
     "lint": "eslint --debug src/",
     "lint:fix": "eslint --debug src/ --fix",
     "prettier": "prettier --write .",
-    "prepare": "husky install ./husky",
+    "prepare": "husky install ./.husky",
     "storybook": "storybook dev -p 6006 -s ./public",
     "build-storybook": "storybook build -s public",
     "deploy-storybook": "storybook-to-aws-s3 --bucket-path=story.sharebigya.com/ --aws-profile=NONE"
