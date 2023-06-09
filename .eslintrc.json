@@ -30,7 +30,8 @@
       }
     ],
     "prettier/prettier": ["error"],
-    "no-unused-vars": [
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
       2,
       {
         "args": "after-used",
@@ -84,15 +85,6 @@
     "/**/node_modules"
   ],
   "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["./"],
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
-      "typescript": {
-        "directory": "./tsconfig.json"
-      }
-    },
     "import/resolver": {
       "node": {
         "paths": ["./"],

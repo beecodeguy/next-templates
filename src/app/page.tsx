@@ -1,8 +1,6 @@
 import styles from "app/page.module.css";
 import ThemeSwitch from "components/common/ThemeSwitch/ThemeSwitch";
 
-// const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <main className={styles.main}>
