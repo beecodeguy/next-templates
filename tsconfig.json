@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -30,9 +31,10 @@
       "lib": ["src/lib"],
       "stories": ["src/stories"],
       "assets": ["src/assets"],
-      "utils": ["src/utils"]
+      "utils": ["src/utils"],
+      "shad": ["src/shad"]
     }
   },
-  "include": ["./**/*", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["./**/*", "next-env.d.ts", "**/*.ts", "**/*.tsx", "**/**/*/ts", "**/**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
