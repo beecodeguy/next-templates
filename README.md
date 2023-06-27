@@ -1,6 +1,7 @@
 ## Getting Started
 
 # Introduction
+Fintech Product to help you to visualize and analyze the day to day Nepal Stock market movement.
 
 visit us at:
 
