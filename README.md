@@ -1,13 +1,21 @@
 ## Getting Started
 
 # Introduction
-Fintech Product to help you to visualize and analyze the day to day Nepal Stock market movement.
 
-visit us at:
+Starter file which have following installed:
 
-- Live Site: [sharebigya.com](https://www.sharebigya.com)
-- Storybooks: [storybook.sharebigya.com](http://story.sharebigya.com)
-- test site: [test.sharebigya.com]
+- NextJs 13
+- Storybook
+- eslint
+- husky
+- shadcn/ui
+- Redux toolkit
+- pre-commit hooks & pre-push hooks
+
+### Heads up for you to focus on coding
+
+You can clone this repo and start working without any hassle for you to think about project setup.
+Everything had been set up for you.
 
 ## NODE VERSION USED ==> (v16.14.0)
 
@@ -18,8 +26,6 @@ If you have difficulty in installing the packages then it is recommended for you
 ## Project CI/CD Info:
 
 We have setup the commit check for the project, so it is essential to follow these rules when creating the new branch.
-
-We will be using following keys in front of the branch name along side with the Ticket number from the JIRA Board.
 
 For Example: If you are working on the Ticket issued to you and the Ticket Number on the board is `SN-1` your new branch name must be `feat/SN-1`
 
@@ -43,18 +49,6 @@ Keys to be used for the branch are:
 
 - Always create the new branch from `develop` as the base branch
 - Branch created must have above mentioned keys as prefix followed by the task the branch is being forked for: `feature/SN-101`
-
-# Note: (PR Creation)
-
-- It is mandatory to create the PR after the completion of the task and add it to the `In review` Column on the `JIRA BOARD`
-- Rule for creation of the PR: If your branch name is `feat/SN-1`, PR title must be started with `SN-1` followed by your task summary.
-  For Example:
-
-```PR Title
-SN-1 | Task Demo shown
-```
-
-- After creation of the PR(Pull Request) we assign the task to the reviewer on the Jira Board and also move the task to respective column
 
 # Storybook: (Intro)
 
