@@ -1,1 +1,17 @@
 @import "components/common/Buttons/_buttons.scss";
+@import "components/TopNav/_topNav.scss";
+
+.icon-container-24 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
